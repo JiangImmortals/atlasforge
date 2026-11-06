@@ -1,0 +1,11 @@
+{
+  "name": "portable-toolbox-agent",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@earendil-works/pi-agent-core": "1.4.0",
+    "@earendil-works/pi-ai": "1.4.0",
+    "@earendil-works/pi-coding-agent": "1.4.0",
+    "@sinclair/typebox": "0.34.41"
+  }
+}

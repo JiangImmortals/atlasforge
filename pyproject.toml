@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "atlasforge"
+version = "0.1.0"
+description = "以 Pi 为主框架、AIpy 为执行子 Agent 的桌面实验工作台。"
+requires-python = ">=3.12,<3.13"
+license = "MIT"
+dependencies = [
+  "PySide6-Essentials>=6.8,<7",
+  "aipyapp==0.5.0",
+  "comtypes>=1.4",
+  "Pillow>=10"
+]
+
+[project.scripts]
+atlasforge = "atlasforge.app:main"
+
+[tool.setuptools.packages.find]
+include = ["atlasforge*"]

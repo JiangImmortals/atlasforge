@@ -1,0 +1,12 @@
+"""资源策略统一入口；不改变悬停取词的轮询、延时和选词规则。
+
+OCR、词典和本地 OPUS 保持常驻，保证悬停首词不等待模型加载。
+大模型及语音识别仅使用时加载；活动请求持有租约，空闲后回收。
+"""
+MODEL_IDLE_SECONDS = 120
+ASR_IDLE_SECONDS = 120
+PROMPT_CACHE_MIB = 256
+INFERENCE_BATCH = 256
+INFERENCE_MICROBATCH = 128
+CODE_COMPLETION_QUIET_MS = 300
+CODE_COMPLETION_MIN_INTERVAL_SECONDS = 1.5
